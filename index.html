@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="The Kevin Cookie Company is the best cookie company in the world">
-  <meta name="keywords" content="cookies, best cookies, chocolate chip cookies, Kevin Cookie Company, gourmet cookies">
-  <meta name="author" content="Kevin Cookie Company">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Open Graph (for social media preview) -->
-  <meta property="og:title" content="Kevin Cookie Company">
-  <meta property="og:description" content="Deliciousness in every bite! Learn about our artisan cookie baking process.">
-  <meta property="og:image" content="https://kcc-logo.com/kcc-logo.jpg"> <!-- Replace with your actual image URL -->
-  <meta property="og:url" content="https://index3.com"> <!-- Replace with your actual site URL -->
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card (optional) -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kevin Cookie Company">
-  <meta name="twitter:description" content="Deliciousness in every bite!">
-  <meta name="twitter:image" content="https://kcc-logo.com/kcc-logo.jpg">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kevin Cookie Company</title>
+  <meta name="description" content="The Kevin Cookie Company - Deliciousness in every bite!" />
+  <meta name="keywords" content="cookies, best cookies, chocolate chip cookies, Kevin Cookie Company" />
+  <meta name="author" content="Kevin Cookie Company" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kevin Cookie Company" />
+  <meta property="og:description" content="Deliciousness in every bite! Learn about our artisan cookie baking process." />
+  <meta property="og:image" content="https://kcc-logo.com/kcc-logo.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kevin Cookie Company" />
+  <meta name="twitter:description" content="Deliciousness in every bite!" />
+  <meta name="twitter:image" content="https://kcc-logo.com/kcc-logo.jpg" />
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet" />
 
   <style>
     body {
-      margin: 0;
       font-family: 'Nunito', sans-serif;
-      text-align: center;
+      margin: 0;
       padding: 50px 20px;
+      text-align: center;
+      background-color: green;
       transition: background-color 0.5s ease;
     }
 
-    /* Responsive background colors */
-    body {
-      background-color: green;
-    }
-
-    @media (max-width: 500px) {
+    @media (max-width: 599px) {
       body {
         background-color: purple;
       }
@@ -51,18 +46,13 @@
       }
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: orange;
-    }
-
     .container {
       max-width: 960px;
       margin: 0 auto;
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      background: #fff;
       padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
     .logo {
@@ -71,25 +61,21 @@
       margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: 3rem;
-      color: #333;
-      margin-bottom: 10px;
+    h1, h2 {
+      color: #2c3e50;
     }
 
     h2 {
-      font-size: 1.8rem;
       color: red;
-      margin-bottom: 20px;
     }
 
     .description {
+      text-align: left;
+      max-width: 700px;
+      margin: 20px auto;
       font-size: 1.1rem;
       line-height: 1.6;
       color: #444;
-      text-align: left;
-      margin: 0 auto 30px;
-      max-width: 700px;
     }
 
     .btn {
@@ -101,45 +87,51 @@
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      margin-top: 20px;
-      transition: background 0.3s ease;
+      margin: 10px;
+      transition: background-color 0.3s ease;
     }
 
     .btn:hover {
       background-color: darkgreen;
+      color: orange;
     }
 
     .media-section {
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     audio, video {
-      width: 100%;
-      max-width: 500px;
-      margin: 10px auto;
+      max-width: 100%;
+      margin: 15px 0;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <img src="kcc logo.jpg" alt="Kevin Cookie Company Logo" class="logo">
+    <img src="kcc-logo.jpg" alt="Kevin Cookie Company Logo" class="logo" />
     <h1>Kevin Cookie Company</h1>
     <h2>Deliciousness in every bite!</h2>
 
     <p class="description">
-      <u>Every</u> cookie made at the Kevin Cookie Company is crafted with only the finest ingredients.
-      Butter from grass-fed cows. Unbleached flour for the best flavor and texture. Organic sugar from India.
-      Eggs from chickens that listen to classical music. Even our water is special — it comes from Cascade mountain springs
-      that we hike up to retrieve ourselves.<br><br>
-      Baking is our passion, and we take it very seriously.
+      <u>Every</u> cookie made at the Kevin Cookie Company is crafted with only the finest ingredients:
+      butter from grass-fed cows, unbleached flour, organic sugar from India, and eggs from chickens that listen to classical music.
+      Even our water is sourced from Cascade mountain springs. Baking is our passion, and we take it seriously.
     </p>
 
-    <a class="btn" href="recipe.html">Learn how to make our delicious cookies</a>
+    <a class="btn" href="recipe.html">Chocolate Chip Cookie Recipe</a>
+    <a class="btn" href="order.html">Order Cookies</a>
 
     <div class="media-section">
-      <audio src="kcc audio2.mp3" controls type="audio/mp3"></audio>
-      <video src="kcc Video.mp4" controls type="video/mp4"></video>
+      <audio controls>
+        <source src="kcc-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls>
+        <source src="kcc-video.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
     </div>
   </div>
 </body>
