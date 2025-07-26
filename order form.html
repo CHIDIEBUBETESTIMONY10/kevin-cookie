@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Order Form - Kevin Cookie Company</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -38,7 +36,7 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
       color: #2c3e50;
     }
@@ -79,6 +77,7 @@
 
     .btn:hover {
       background-color: darkgreen;
+      color: orange;
     }
 
     p.thankyou {
@@ -87,53 +86,61 @@
       font-style: italic;
       margin-top: 30px;
     }
+
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-     <a class="btn" href="index.html">Home</a>
-     <a class="btn" href="recipe.html">recipe</a>
-     <a class="btn" href="contact.html">contact</a>
+    <nav>
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="recipe.html">Recipe</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+
     <h1>Order Our Delicious Cookies</h1>
-                <h2>Menue</h2>
-    <!-- Replace with your actual Formspree link -->
+    <h2>Menu</h2>
+
     <form action="https://formspree.io/f/xdkzgdob" method="POST">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="Username" placeholder="Enter your username" required autofocus>
+      <input type="text" id="username" name="Username" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="Email" placeholder="Enter your email" required autofocus>
+      <input type="email" id="email" name="Email" required>
 
       <label>Gender:</label>
       <div class="radio-group">
         <label><input type="radio" name="Gender" value="Male" required> Male</label>
-        <label><input type="radio" name="Gender" value="Female" required autofocus> Female</label>
+        <label><input type="radio" name="Gender" value="Female" required> Female</label>
       </div>
 
-      <label for="Age">Age:</label>
-      <input type="number" id="Age" name="Age" min="1" max="120" placeholder="Optional">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="Age" min="1" max="120">
 
       <label for="cookie">Cookie Type:</label>
-      <input type="text" id="cookie" name="Cookie Type" placeholder="Enter your cookie type" required autofocus>
+      <input type="text" id="cookie" name="Cookie Type" required>
 
       <label for="icecream">Ice Cream Type:</label>
-      <input type="text" id="icecream" name="Ice Cream Type" placeholder="Enter your ice cream type" required autofocus>
+      <input type="text" id="icecream" name="Ice Cream Type" required>
 
       <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required autofocus>
+      <input type="tel" id="phone" name="Phone Number" required>
 
-      <label for="quantity">Quantity(ice cream):</label> 
-      <input type="number" id="quantity" name="Quantity" min="1" max="100"placeholder="How many ice cream?(scoops)"required autofocus>
+      <label for="ice-quantity">Quantity (Ice Cream - scoops):</label>
+      <input type="number" id="ice-quantity" name="Ice Cream Quantity" required>
 
-      <label for="quantity">Quantity(Cookies):</label> 
-      <input type="number" id="quantity" name="Quantity" min="1" max="100" placeholder="How many cookies?(pieces)" required autofocus>
+      <label for="cookie-quantity">Quantity (Cookies - pieces):</label>
+      <input type="number" id="cookie-quantity" name="Cookie Quantity" required>
 
       <label for="date">Preferred Delivery Date:</label>
-      <input type="date" id="date" name="Delivery Date" required autofocus>
+      <input type="date" id="date" name="Delivery Date">
 
       <label for="address">Address:</label>
-      <input type="text" id="address" name="Address" placeholder="Enter your delivery address" required autofocus>
+      <input type="text" id="address" name="Address" required>
 
       <button type="reset" class="btn">Reset</button>
       <button type="submit" class="btn">Submit Order</button>
