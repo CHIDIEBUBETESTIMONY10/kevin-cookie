@@ -1,68 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mega GTO Int'l Cargo Ltd</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The Kevin Cookie Company is the best cookie company in the world">
+  <meta name="keywords" content="cookies, best cookies, chocolate chip cookies, Kevin Cookie Company, gourmet cookies">
+  <meta name="author" content="Kevin Cookie Company">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (for social media preview) -->
+  <meta property="og:title" content="Kevin Cookie Company">
+  <meta property="og:description" content="Deliciousness in every bite! Learn about our artisan cookie baking process.">
+  <meta property="og:image" content="https://kcc-logo.com/kcc-logo.jpg"> <!-- Replace with your actual image URL -->
+  <meta property="og:url" content="https://index3.com"> <!-- Replace with your actual site URL -->
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card (optional) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kevin Cookie Company">
+  <meta name="twitter:description" content="Deliciousness in every bite!">
+  <meta name="twitter:image" content="https://kcc-logo.com/kcc-logo.jpg">
+
+  <title>Kevin Cookie Company</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Nunito', sans-serif;
       margin: 0;
+      font-family: 'Nunito', sans-serif;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #f5f5f5;
+      padding: 50px 20px;
+      transition: background-color 0.5s ease;
     }
+
+    /* Responsive background colors */
+    body {
+      background-color: green;
+    }
+
     @media (max-width: 500px) {
-      body { background-color: #b19cd9; } /* light purple */
+      body {
+        background-color: purple;
+      }
     }
+
     @media (min-width: 600px) {
-      body { background-color: #4b0082; } /* dark indigo */
+      body {
+        background-color: aqua;
+      }
     }
+
+    a:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+
     .container {
       max-width: 960px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
+      margin: 0 auto;
+      background-color: #fff;
       border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
     }
+
     .logo {
-      width: 180px;
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
     }
-    h1 { color: #2c3e50; }
-    h2 { color: #4b0082; }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+      text-align: left;
+      margin: 0 auto 30px;
+      max-width: 700px;
+    }
+
     .btn {
-      background: #4b0082;
+      display: inline-block;
+      background-color: green;
       color: white;
-      padding: 10px 20px;
-      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
       border-radius: 8px;
       text-decoration: none;
-      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s ease;
     }
-    .btn:hover { background: #3a006a; }
-    .description {
-      text-align: left;
-      max-width: 700px;
-      margin: 20px auto;
+
+    .btn:hover {
+      background-color: darkgreen;
+    }
+
+    .media-section {
+      margin-top: 40px;
+    }
+
+    audio, video {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <img src="logo.png" alt="Mega GTO Logo" class="logo" />
-    <h1>Mega GTO Int'l Cargo Ltd</h1>
-    <h2>Freight, Logistics, Delivery & Consultancy Services</h2>
+    <img src="kcc logo.jpg" alt="Kevin Cookie Company Logo" class="logo">
+    <h1>Kevin Cookie Company</h1>
+    <h2>Deliciousness in every bite!</h2>
 
     <p class="description">
-      Mega GTO provides trusted freight forwarding, warehousing, and logistics support for your international needs.
-      Located at ZONE B BLK 14 SHOPS 50/52 ASPAMDA TRADE FAIR, LAGOS.
+      <u>Every</u> cookie made at the Kevin Cookie Company is crafted with only the finest ingredients.
+      Butter from grass-fed cows. Unbleached flour for the best flavor and texture. Organic sugar from India.
+      Eggs from chickens that listen to classical music. Even our water is special — it comes from Cascade mountain springs
+      that we hike up to retrieve ourselves.<br><br>
+      Baking is our passion, and we take it very seriously.
     </p>
 
-    <a class="btn" href="services.html">Our Services</a>
-    <a class="btn" href="order.html">Request a Delivery</a>
-    <a class="btn" href="contact.html">Contact Us</a>
+    <a class="btn" href="recipe2.html">Learn How To Make Our Chocolate Chip Cookie</a>
+
+    <div class="media-section">
+      <audio src="kcc audio2.mp3" controls type="audio/mp3"></audio>
+      <video src="kcc Video.mp4" controls type="video/mp4"></video>
+    </div>
   </div>
 </body>
 </html>
